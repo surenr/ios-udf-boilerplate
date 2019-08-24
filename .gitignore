@@ -5,6 +5,9 @@
 ## Build generated
 build/
 DerivedData/
+Pods/
+Podfile.lock
+.DS_Store
 
 ## Various settings
 *.pbxuser
