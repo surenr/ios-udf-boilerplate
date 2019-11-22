@@ -1,7 +1,12 @@
+platform :ios, '10.3'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://10.10.1.71/shopping/pod-specs.git'
+
 use_frameworks!
 target 'ios-udf-boilerplate' do
    pod 'ReSwift'
    pod 'PromiseKit'
+   pod 'DriwIOSBase'
    target 'ios-udf-boilerplateTests' do
        use_frameworks!
        pod 'Quick'

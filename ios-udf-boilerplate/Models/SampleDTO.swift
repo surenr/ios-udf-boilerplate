@@ -8,7 +8,14 @@
 
 class SampleDTO {
     var name: String = ""
+    
     init(name: String) {
         self.name = name
     }
+    
+    func copy(name: String? = nil) -> SampleDTO {
+        return SampleDTO(name: name ?? self.name)
+        
+    }
+    
 }

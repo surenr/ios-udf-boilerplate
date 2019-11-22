@@ -7,14 +7,17 @@
 //
 
 import ReSwift
+import DriwIOSBase
 
-func sampleReducer(action: Action, state: AppState) -> AppState {
+func sampleReducer(action: Action, state: UdfBaseState<ApplicationState>) -> UdfBaseState<ApplicationState> {
     switch(action as! SampleAction) {
     case .perform(let sampleDto, let id):
-        let localState = state.copy(sampleDto: sampleDto)
-        return updateActionsStateStatus(state: localState, actionId: id, action: SampleAction.success)
+        let localState = state.appState.copy(sampleDto: sampleDto)
+        let newState = state.copy(state: localState)
+        
+        return reducerUtil.updateActionsStateStatus(state: newState, actionId: id, action: SampleAction.success)
     case .failure(let error, let id):
-        return updateActionsStateStatus(state: state, actionId: id, action: SampleAction.failure(error: error, id: id))
+        return reducerUtil.updateActionsStateStatus(state: state, actionId: id, action: SampleAction.failure(error: error, id: id))
     default:
         return state
     }
