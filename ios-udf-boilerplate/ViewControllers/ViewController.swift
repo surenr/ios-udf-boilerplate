@@ -11,18 +11,22 @@ import Foundation
 import DriwIOSBase
 
 class ViewController: BaseViewController {
+    
+    @IBOutlet weak var nameLabel:UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        dispatchAction(action: SampleAction.request(name: "", id: self.getActionId()))
+        
+        // pass any name to print or keep it empty to get an error
+        dispatchAction(action: SampleAction.request(name: "Steve Wozniak", id: self.getActionId()))
     }
     
     //UDF methods
     override func onStateUpdate(state: UdfBaseState<ApplicationState>, action: BaseAction?) -> Bool {
         switch(action!) { // NB: How to handle action based state update
         case _ as SampleAction:
-            print("successfully retrived and print " + getSampleDTOName(store.state))
+            print("🥳 successfully retrived and print the name : " + getSampleDTOName(store.state))
+            self.nameLabel.text = "🙋🏻‍♂️ Hello " + getSampleDTOName(store.state)
             return true
         default:
             return false
