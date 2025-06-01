@@ -6,8 +6,10 @@
 //  Copyright © 2019 Suren Rodrigo. All rights reserved.
 //
 
+import DriwIOSBase
 import PromiseKit
-protocol DataService {
+
+protocol AppDataService: DataService {
     func sampleApiService(param:String) -> Promise<SampleDTO>
 }
 

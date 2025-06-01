@@ -8,11 +8,12 @@
 
 import UIKit
 import ReSwift
+import DriwIOSBase
 
-
-let sideEffects = injectService(service: RemoteDataService(), receivers: dataServiceSideEffects)
-let middleware = createMiddleware(items: sideEffects)
-var store = Store<AppState>(reducer: appReducer, state: nil, middleware: [middleware])
+//UDF
+let sideEffects = injectService(service: RemoteDataService(), receivers:dataServiceSideEffects)
+let middleware = createMiddleware(appState:ApplicationState(), items: sideEffects)
+let store = Store<UdfBaseState<ApplicationState>>(reducer: AppReducer, state: nil, middleware: [middleware])
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

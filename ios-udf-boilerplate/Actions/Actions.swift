@@ -6,8 +6,11 @@
 //  Copyright © 2019 Suren Rodrigo. All rights reserved.
 //
 
+import DriwIOSBase
+import ReSwift
+
 enum SampleAction: BaseAction {
-    case request(gender: String, id: String?)
+    case request(name: String, id: String?)
     case success
     case perform(sampleDto: SampleDTO, id: String?)
     case failure(error: ApiError, id: String?)

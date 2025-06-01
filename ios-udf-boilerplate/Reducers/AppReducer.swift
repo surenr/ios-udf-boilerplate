@@ -6,24 +6,20 @@
 //  Copyright © 2019 Suren Rodrigo. All rights reserved.
 //
 
+import DriwIOSBase
 import ReSwift
 
-func  updateActionsStateStatus(state: AppState, actionId: String?, action: BaseAction) -> AppState {
-    if(actionId != nil) {
-        var systemStateUpdateTracker = state.systemStateUpdateTracker
-        systemStateUpdateTracker[actionId!] = action
-        return state.copy(systemStateUpdateTracker: systemStateUpdateTracker)
-    }
-    return state
-}
+let reducerUtil = ReducerUtil<ApplicationState>()
 
-func appReducer(action: Action, state: AppState?) -> AppState {
-    let state = state ?? AppState()
+func AppReducer(action: Action, state: UdfBaseState<ApplicationState>?) -> UdfBaseState<ApplicationState> {
+    let state = state ?? UdfBaseState<ApplicationState>(state: ApplicationState())
     switch action {
     case _ as SampleAction:
         return sampleReducer(action: action, state: state)
+        
+    //Don't remove below case
     case _ as RemoveStateStatus:
-        return removeStateStatusReducer(action: action, state: state)
+        return reducerUtil.removeStateStatusReducer(action: action, state: state)
     default:
         return state
     }

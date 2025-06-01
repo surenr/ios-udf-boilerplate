@@ -7,14 +7,15 @@
 //
 
 import ReSwift
+import DriwIOSBase
 
-func sampleSideEffect(dataService: DataService) -> MiddlewareItem {
-    return { (action: Action, dispatch: @escaping DispatchFunction) in
+func sampleSideEffect(dataService: AppDataService) -> MiddlewareItem {
+    return { (action: Action, dispatch: @escaping DispatchSideEffect) in
         // descruct the request instance and extract the variables
         guard let action = action as? SampleAction,
-            case .request (let gender, let id?) = action else { return }
+            case .request (let name, let id?) = action else { return }
         // call the backend service
-        dataService.sampleApiService(param: gender)
+        dataService.sampleApiService(param: name)
             .done {sampleDto in // Handle success
                 dispatch(SampleAction.perform(sampleDto: sampleDto,  id: id))
             }

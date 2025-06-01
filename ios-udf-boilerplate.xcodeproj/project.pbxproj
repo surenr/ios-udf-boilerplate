@@ -7,15 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2403556723042E380051A207 /* MiddlewareItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403556623042E380051A207 /* MiddlewareItem.swift */; };
-		2403556923042ED50051A207 /* InjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403556823042ED50051A207 /* InjectService.swift */; };
-		2403556B23042F010051A207 /* CreateMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403556A23042F010051A207 /* CreateMiddleware.swift */; };
 		2403556E23042F6E0051A207 /* SideEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403556D23042F6E0051A207 /* SideEffects.swift */; };
 		24035570230560350051A207 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403556F230560350051A207 /* Actions.swift */; };
 		24035572230561270051A207 /* SampleSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24035571230561270051A207 /* SampleSideEffect.swift */; };
 		2403557523056A150051A207 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403557423056A150051A207 /* AppReducer.swift */; };
 		2403557723056A740051A207 /* SampleReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403557623056A740051A207 /* SampleReducer.swift */; };
-		2403557B23059E210051A207 /* RemoveStateStatusReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2403557A23059E210051A207 /* RemoveStateStatusReducer.swift */; };
 		240355812306DB850051A207 /* TestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240355802306DB850051A207 /* TestBase.swift */; };
 		24035583230D19730051A207 /* SampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24035582230D19730051A207 /* SampleTest.swift */; };
 		242B581C22FD65800015C03D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B581B22FD65800015C03D /* AppDelegate.swift */; };
@@ -24,15 +20,12 @@
 		242B582322FD65830015C03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242B582222FD65830015C03D /* Assets.xcassets */; };
 		242B582622FD65830015C03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242B582422FD65830015C03D /* LaunchScreen.storyboard */; };
 		242B583122FD65840015C03D /* ios_udf_boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B583022FD65840015C03D /* ios_udf_boilerplateTests.swift */; };
-		242B583D22FD860F0015C03D /* SampleInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B583C22FD860F0015C03D /* SampleInheritance.swift */; };
-		242B584122FE60790015C03D /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B584022FE60790015C03D /* Base.swift */; };
 		242B584422FE63590015C03D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B584322FE63590015C03D /* AppState.swift */; };
-		242B584722FE63AC0015C03D /* BaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B584622FE63AC0015C03D /* BaseAction.swift */; };
-		242B584A22FE64200015C03D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B584922FE64200015C03D /* ApiError.swift */; };
 		242B584D22FE904D0015C03D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B584C22FE904D0015C03D /* DataService.swift */; };
 		242B584F22FE90C40015C03D /* SampleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B584E22FE90C40015C03D /* SampleDTO.swift */; };
 		242B585122FE91110015C03D /* RemoteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B585022FE91110015C03D /* RemoteDataService.swift */; };
 		3EC0E5F950FE4D964F813912 /* Pods_ios_udf_boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06519BBEE933A3C062404E83 /* Pods_ios_udf_boilerplate.framework */; };
+		D20949F8238833E100B81DBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20949F7238833E100B81DBE /* BaseViewController.swift */; };
 		D778DB1081E3581ED5062723 /* Pods_ios_udf_boilerplate_ios_udf_boilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49920FE58B4B39C176CAF946 /* Pods_ios_udf_boilerplate_ios_udf_boilerplateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,15 +42,11 @@
 /* Begin PBXFileReference section */
 		06519BBEE933A3C062404E83 /* Pods_ios_udf_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_udf_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2220BC8FF30FEEBC5AF2AF3C /* Pods-ios-udf-boilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-udf-boilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-ios-udf-boilerplateTests/Pods-ios-udf-boilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		2403556623042E380051A207 /* MiddlewareItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareItem.swift; sourceTree = "<group>"; };
-		2403556823042ED50051A207 /* InjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectService.swift; sourceTree = "<group>"; };
-		2403556A23042F010051A207 /* CreateMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMiddleware.swift; sourceTree = "<group>"; };
 		2403556D23042F6E0051A207 /* SideEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffects.swift; sourceTree = "<group>"; };
 		2403556F230560350051A207 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		24035571230561270051A207 /* SampleSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSideEffect.swift; sourceTree = "<group>"; };
 		2403557423056A150051A207 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		2403557623056A740051A207 /* SampleReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleReducer.swift; sourceTree = "<group>"; };
-		2403557A23059E210051A207 /* RemoveStateStatusReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveStateStatusReducer.swift; sourceTree = "<group>"; };
 		240355802306DB850051A207 /* TestBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBase.swift; sourceTree = "<group>"; };
 		24035582230D19730051A207 /* SampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTest.swift; sourceTree = "<group>"; };
 		242B581822FD65800015C03D /* ios-udf-boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-udf-boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,11 +59,7 @@
 		242B582C22FD65840015C03D /* ios-udf-boilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-udf-boilerplateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		242B583022FD65840015C03D /* ios_udf_boilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_udf_boilerplateTests.swift; sourceTree = "<group>"; };
 		242B583222FD65840015C03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		242B583C22FD860F0015C03D /* SampleInheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInheritance.swift; sourceTree = "<group>"; };
-		242B584022FE60790015C03D /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		242B584322FE63590015C03D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		242B584622FE63AC0015C03D /* BaseAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAction.swift; sourceTree = "<group>"; };
-		242B584922FE64200015C03D /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		242B584C22FE904D0015C03D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		242B584E22FE90C40015C03D /* SampleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDTO.swift; sourceTree = "<group>"; };
 		242B585022FE91110015C03D /* RemoteDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataService.swift; sourceTree = "<group>"; };
@@ -84,6 +69,7 @@
 		8FFDB3CF1AAAB5C7A255DFC8 /* Pods-ios-udf-boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-udf-boilerplate.release.xcconfig"; path = "Target Support Files/Pods-ios-udf-boilerplate/Pods-ios-udf-boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 		92B180F96A53AA3F4EF5A86D /* Pods-ios-udf-boilerplate-ios-udf-boilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-udf-boilerplate-ios-udf-boilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-ios-udf-boilerplate-ios-udf-boilerplateTests/Pods-ios-udf-boilerplate-ios-udf-boilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B46749AB7E662A8482ABF715 /* Pods-ios-udf-boilerplate-ios-udf-boilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-udf-boilerplate-ios-udf-boilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-ios-udf-boilerplate-ios-udf-boilerplateTests/Pods-ios-udf-boilerplate-ios-udf-boilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		D20949F7238833E100B81DBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,16 +92,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2403556523042E0F0051A207 /* Middleware */ = {
-			isa = PBXGroup;
-			children = (
-				2403556623042E380051A207 /* MiddlewareItem.swift */,
-				2403556823042ED50051A207 /* InjectService.swift */,
-				2403556A23042F010051A207 /* CreateMiddleware.swift */,
-			);
-			path = Middleware;
-			sourceTree = "<group>";
-		};
 		2403556C23042F520051A207 /* SideEffects */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +106,6 @@
 			children = (
 				2403557423056A150051A207 /* AppReducer.swift */,
 				2403557623056A740051A207 /* SampleReducer.swift */,
-				2403557A23059E210051A207 /* RemoveStateStatusReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -160,15 +135,12 @@
 			children = (
 				24035573230569F90051A207 /* Reducers */,
 				2403556C23042F520051A207 /* SideEffects */,
-				2403556523042E0F0051A207 /* Middleware */,
 				242B584822FE64070015C03D /* Models */,
 				242B584B22FE8F080015C03D /* Service */,
 				242B584522FE639E0015C03D /* Actions */,
 				242B584222FE634B0015C03D /* State */,
-				242B583F22FE605A0015C03D /* Base */,
 				242B583B22FD85F00015C03D /* ViewControllers */,
 				242B581B22FD65800015C03D /* AppDelegate.swift */,
-				242B581D22FD65800015C03D /* ViewController.swift */,
 				242B581F22FD65800015C03D /* Main.storyboard */,
 				242B582222FD65830015C03D /* Assets.xcassets */,
 				242B582422FD65830015C03D /* LaunchScreen.storyboard */,
@@ -191,17 +163,10 @@
 		242B583B22FD85F00015C03D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				242B583C22FD860F0015C03D /* SampleInheritance.swift */,
+				D20949F92388485D00B81DBE /* Base */,
+				242B581D22FD65800015C03D /* ViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		242B583F22FE605A0015C03D /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				242B584022FE60790015C03D /* Base.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		242B584222FE634B0015C03D /* State */ = {
@@ -215,7 +180,6 @@
 		242B584522FE639E0015C03D /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				242B584622FE63AC0015C03D /* BaseAction.swift */,
 				2403556F230560350051A207 /* Actions.swift */,
 			);
 			path = Actions;
@@ -224,7 +188,6 @@
 		242B584822FE64070015C03D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				242B584922FE64200015C03D /* ApiError.swift */,
 				242B584E22FE90C40015C03D /* SampleDTO.swift */,
 			);
 			path = Models;
@@ -259,6 +222,14 @@
 				49920FE58B4B39C176CAF946 /* Pods_ios_udf_boilerplate_ios_udf_boilerplateTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D20949F92388485D00B81DBE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D20949F7238833E100B81DBE /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,23 +419,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				24035570230560350051A207 /* Actions.swift in Sources */,
-				242B584A22FE64200015C03D /* ApiError.swift in Sources */,
 				2403557723056A740051A207 /* SampleReducer.swift in Sources */,
 				2403557523056A150051A207 /* AppReducer.swift in Sources */,
 				242B584F22FE90C40015C03D /* SampleDTO.swift in Sources */,
-				242B584122FE60790015C03D /* Base.swift in Sources */,
+				D20949F8238833E100B81DBE /* BaseViewController.swift in Sources */,
 				242B584422FE63590015C03D /* AppState.swift in Sources */,
 				24035572230561270051A207 /* SampleSideEffect.swift in Sources */,
 				242B581E22FD65800015C03D /* ViewController.swift in Sources */,
 				242B581C22FD65800015C03D /* AppDelegate.swift in Sources */,
-				2403556723042E380051A207 /* MiddlewareItem.swift in Sources */,
-				2403557B23059E210051A207 /* RemoveStateStatusReducer.swift in Sources */,
-				242B584722FE63AC0015C03D /* BaseAction.swift in Sources */,
-				2403556923042ED50051A207 /* InjectService.swift in Sources */,
 				2403556E23042F6E0051A207 /* SideEffects.swift in Sources */,
-				2403556B23042F010051A207 /* CreateMiddleware.swift in Sources */,
 				242B585122FE91110015C03D /* RemoteDataService.swift in Sources */,
-				242B583D22FD860F0015C03D /* SampleInheritance.swift in Sources */,
 				242B584D22FE904D0015C03D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -616,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -633,6 +597,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B28QYD22ZM;
 				INFOPLIST_FILE = "ios-udf-boilerplate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -651,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B28QYD22ZM;
 				INFOPLIST_FILE = "ios-udf-boilerplate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,6 +636,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B28QYD22ZM;
 				INFOPLIST_FILE = "ios-udf-boilerplateTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -691,6 +658,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B28QYD22ZM;
 				INFOPLIST_FILE = "ios-udf-boilerplateTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
